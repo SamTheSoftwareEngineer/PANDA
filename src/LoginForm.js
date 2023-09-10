@@ -1,14 +1,28 @@
 import React from 'react'
+import {useState} from 'react'
 
-function loginForm() {
+function LoginForm() {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`The username you entered was: ${username}`)
+    }
+
+
     return (
-        <form>
+        <form onsubmit={handleSubmit}>
             <label> 
-                Username: <text name='username'></text>
+                Username: <input type='text' value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                />
             </label>
             <br />
             <label> 
-                Password: <text name='password'></text>
+                Password: <input type='text' value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                />
             </label>
             <br />
             <button type='submit'>Login</button>
@@ -16,4 +30,5 @@ function loginForm() {
     );
 }
 
-export default loginForm;
+
+export default LoginForm;
