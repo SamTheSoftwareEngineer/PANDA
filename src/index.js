@@ -1,6 +1,7 @@
 import React from 'react';
+import App from './App';
 import ReactDOM from 'react-dom/client';
-import LoginForm from './LoginForm';
+import { BrowserRouter } from 'react-router-dom';
 import './stylesheet.css'
 
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginForm />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
