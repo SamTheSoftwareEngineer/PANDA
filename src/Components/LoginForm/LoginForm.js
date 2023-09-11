@@ -3,14 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import FormInput from '../FormInput/FormInput'
 import './LoginForm.scss'
 
+// Set initial state for username and password to empty string
 const INITIAL_STATE = {
     username: '',
     password: ''
 }
 
+// Use state to store username and password
 function LoginForm() {
     const [formFields, setFormFields] = useState(INITIAL_STATE)
     const {username, password} = formFields
+    // Use useNavigate to reditect different pages 
     const navigate = useNavigate()
 
     const resetForm = () => {
