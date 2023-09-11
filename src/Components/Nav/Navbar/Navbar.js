@@ -1,4 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom"
+import { ReactComponent as Logo } from "../../../Images/panda-new.svg"
+
 import './Navbar.scss'
 
 
@@ -8,7 +10,7 @@ const Navbar = () => {
         <>
             <div className="Navbar-container">
                 <div className="Logo-container">
-                    <NavLink to='/' className="Logo">Logo here</NavLink>
+                    <NavLink to='/' className="Logo"><Logo/></NavLink>
                 </div>
                 <div className="NavLink-container">
                     <NavLink className='NavLink' to='/login'>LOGIN</NavLink>
