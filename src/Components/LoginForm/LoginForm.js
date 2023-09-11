@@ -13,7 +13,7 @@ const INITIAL_STATE = {
 function LoginForm() {
     const [formFields, setFormFields] = useState(INITIAL_STATE)
     const {username, password} = formFields
-    // Use useNavigate to reditect different pages 
+    // Use useNavigate to redirect different pages 
     const navigate = useNavigate()
 
     const resetForm = () => {
