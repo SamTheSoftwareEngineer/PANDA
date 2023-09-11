@@ -1,0 +1,20 @@
+.Routine-container {
+    background-color: rgb(181, 181, 181);
+    width: 50%;
+    border-radius: 5%;
+
+    .Form-container {
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    border-radius: 5%;
+
+    form {
+        margin: auto;
+    }    
+    
+    }
+}
