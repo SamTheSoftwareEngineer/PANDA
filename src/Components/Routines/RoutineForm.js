@@ -31,7 +31,7 @@ const RoutineForm = () => {
             console.log(e)
         }
     }
-    
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormFields({...formFields, [name]:value})
@@ -40,7 +40,8 @@ const RoutineForm = () => {
 
     return (
         <div className='Routine-container'>
-            <div className='Form-container'>
+            <div>
+              <div className='Form-container'>
                 <form className='form' onSubmit={handleSubmit}>
                     <FormInput
                         label='Routine Name'
@@ -59,7 +60,7 @@ const RoutineForm = () => {
                             name: 'Description',
                             value: Description,
                             onChange: handleChange,
-                            required: false 
+                            required: false
                         }}
                         />
                     <FormInput
@@ -104,6 +105,7 @@ const RoutineForm = () => {
                         />
                     <button onSubmit={handleSubmit}>Create Routine</button>
                 </form>
+              </div>
             </div>
         </div>
     )

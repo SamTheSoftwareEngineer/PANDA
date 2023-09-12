@@ -1,20 +1,23 @@
 .Routine-container {
+    margin: auto;
     background-color: rgb(181, 181, 181);
-    width: 50%;
+    width: 375px;
     border-radius: 5%;
+    padding: 75px;
 
     .Form-container {
-    margin: auto;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    border-radius: 5%;
-
-    form {
         margin: auto;
-    }    
-    
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+        border-radius: 5%;
+        border: 1px solid black;
+
+        button {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 }
